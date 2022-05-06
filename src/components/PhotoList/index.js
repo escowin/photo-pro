@@ -1,119 +1,139 @@
-import React, { useState } from "react";
-// import Modal from "../Modal";
-// import photo from '../../assets/small/commercial/0.jpg';
+import React, { useState } from 'react';
 
 const PhotoList = ({ category }) => {
-    const [photos] = useState([
-        {
-            name: "grocery aisle",
-            category: "commercial",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "grocery booth",
-            category: "commercial",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "building exterior",
-            category: "commercial",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "restaurant table",
-            category: "commercial",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "cafe interior",
-            category: "commercial",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "green parrot",
-            category: "portraits",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "yellow macaw",
-            category: "portraits",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "pug smile",
-            category: "portraits",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "pancakes",
-            category: "food",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "burrito",
-            category: "food",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "scallop pasta",
-            category: "food",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "burger",
-            category: "food",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "fruit bowl",
-            category: "food",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "green river",
-            category: "landscape",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "docks",
-            category: "landscape",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "panoramic village by sea",
-            category: "landscape",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "domestic landscape",
-            category: "landscape",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-        {
-            name: "park bench",
-            category: "landscape",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie"
-        },
-    ]);
+  const [photos] = useState([
+    {
+      name: 'Grocery aisle',
+      category: 'commercial',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Grocery booth',
+      category: 'commercial',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Building exterior',
+      category: 'commercial',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Restaurant table',
+      category: 'commercial',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Cafe interior',
+      category: 'commercial',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Cat green eyes',
+      category: 'portraits',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Green parrot',
+      category: 'portraits',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Yellow macaw',
+      category: 'portraits',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Pug smile',
+      category: 'portraits',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Pancakes',
+      category: 'food',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Burrito',
+      category: 'food',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Scallop pasta',
+      category: 'food',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Burger',
+      category: 'food',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Fruit bowl',
+      category: 'food',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Green river',
+      category: 'landscape',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Docks',
+      category: 'landscape',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Panoramic village by sea',
+      category: 'landscape',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Domestic landscape',
+      category: 'landscape',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    },
+    {
+      name: 'Park bench',
+      category: 'landscape',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie'
+    }
+  ]);
 
-    // finding every photo in Photos[] that matches user-selected category
-    const currentPhotos = photos.filter((photo) => photo.category === category);
+  const currentPhotos = photos.filter(photo => photo.category === category);
 
-    return (
-      <div>
-        <div className="flex-row">
-          {currentPhotos.map((image, i) => (
-            <img
-              src={require(`../../assets/small/${category}/${i}.jpg`)}
-              alt={image.name}
-              className="img-thumbnail mx-1"
-              key={image.name}
-            />
-          ))}
-        </div>
+  return (
+    <div>
+      <div className="flex-row">
+        {currentPhotos.map((image, i) => (
+          <img
+            src={require(`../../assets/small/${category}/${i}.jpg`).default}
+            alt={image.name}
+            className="img-thumbnail mx-1"
+            key={image.name}
+          />
+        ))}
       </div>
-    );
-  };
-  
+    </div>
+  );
+};
 
 export default PhotoList;
