@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
   const [formState, setFormState] = useState({
@@ -12,6 +13,8 @@ function ContactForm() {
     setFormState({ ...formState, name: e.target.value });
   }
   console.log(formState);
+
+  
 
   // JSX
   return (
